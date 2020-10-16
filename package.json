@@ -6,10 +6,13 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test": "vue-cli-service test"
+    "test": "vue-cli-service test:unit --recursive src/**/**/*.spec.js"
   },
   "dependencies": {
+    "@vue/cli-plugin-unit-mocha": "^4.5.7",
+    "@vue/test-utils": "^1.1.0",
     "axios": "^0.20.0",
+    "chai": "^4.2.0",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-router": "^3.4.5",
